@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+.brand-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Satisfy", cursive;
+  background: #000046; 
+  background: -webkit-linear-gradient(
+    45deg, 
+    #000428 ,#004f94);  
+  background-clip:border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-custom {
+  background-color: #0a9396 !important;
+  box-shadow: 3px 3px 3px #014754;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar is always on top */
+}
+
+.content {
+  margin-top: 10rem; /* Adjust this value if your navbar height changes */
+}
+
+.navbar-brand svg {
+  height: 40px;
+  width: 40px;
+}
+
+.brand-name {
+  margin-left: 0.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  /* color: #eeb600; */
+  color:  #000428;
+
+  /* font-weight: normal; */
+  text-decoration: none;
+}
+
+
+.nav-link.active {
+  font-weight: bolder;
+}
+
+.nav-item.active .nav-link {
+  font-weight: 800;
+}
+
+.nav-link:hover {
+  color: #004e92;
+
+}
+
+.nav-item.trending .nav-link,
+.nav-item.today .nav-link,
+.nav-item.recent .nav-link {
+  text-decoration: underline;
+}

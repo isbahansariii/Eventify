@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: larger;
+  font-weight: bold;
+  min-height: 70px;
+  width: 100vw; 
+  background-color: #0a9396 !important;
+  color:#000;
+  line-height: 25px;
+  padding-left: 10px;
+}
+.footer span { 
+  font-weight: bolder;
+  padding-right: 7px;
+  font-style: italic;
+}

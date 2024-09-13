@@ -1,0 +1,47 @@
+.review-container {
+  height: 110vh;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+.form-control {
+  height: 7rem;
+  outline: 2px solid #008080;
+}
+.btn-primary {
+  border-color: #008080;
+  background-color: #008080;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  border-color: #008080;
+  background-color: #025959;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #008080;
+  margin-bottom: 3px;
+}
+
+.rev-delete-btn {
+  position: relative;
+  top: 1px;
+  left: 10px;
+  background-color: #ca2230;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.rev-delete-btn:hover {
+  color: #fff;
+  background-color: #661414;
+}
+
+
+
+
+

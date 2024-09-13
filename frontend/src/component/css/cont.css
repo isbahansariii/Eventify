@@ -1,0 +1,100 @@
+#upcom-div,
+#today-div { 
+    margin: 0 1% 5% 0;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+
+    background-image: url("./bg-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the color and opacity */
+    background-blend-mode: overlay;
+    
+    border: 0px solid transparent;
+    /* border-image: linear-gradient(-45deg, #f00, #f0f, #f00, #00f, #0f0); */
+    /* border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,4,72,1) 24%, rgba(6,5,83,1) 31%, rgba(9,9,121,1) 65%, rgba(0,212,255,1) 100%); */
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgba(15, 15, 15, 0.2);
+
+    position: relative;
+    color: #fff;
+    overflow: hidden; /* Ensure the overlay doesn't spill out */
+    transition: all 0.2s ease-in-out; /* Added transition for smoother hover effect */
+}
+
+#upcom-div::before,
+#today-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 130%;
+    border-radius: 50%;
+    /* background: rgb(238, 155, 0, 0.5);  */
+    background:  rgba(0, 213, 255, 0.397);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,4,72,1) 24%, rgba(6,5,83,1) 31%, rgba(9,9,121,1) 65%, rgba(0,212,255,1) 100%); */
+    transform: translate(100%, 90%); /* Start position from bottom-left corner */
+    transition: transform 0.5s ease; /* Smooth transition */
+    z-index: 1; /* Ensure it is above the background but below the content */
+}
+
+#upcom-div:hover::before,
+#today-div:hover::before {
+    transform: translate(-1%, 16%); /* Move overlay into view on hover */
+}
+
+#upcom-div:hover,
+#today-div:hover {
+    cursor: pointer;
+    /* box-shadow: 2px 2px 2px #8f3ad5; */
+    box-shadow: 2px 2px 2px rgba(9, 9, 121, 0.744);
+
+    /* color: #1e6172; */
+    color : white;
+    transform: scale(1.03);
+}
+
+#upcom-div > h3,
+#upcom-div > p,
+#today-div > h3,
+#today-div > p {
+    text-align: left;
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.delete-btn,
+.update-btn {
+    position: absolute;
+    right: 10px;
+    width: 80px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for showing/hiding buttons */
+    z-index: 3; /* Ensure buttons are above the overlay */
+}
+
+.delete-btn {
+    bottom: 10px;
+}
+
+.delete-btn:hover {
+    color: #fff;
+    background-color: #661414;
+}
+
+.update-btn {
+    bottom: 55px;
+}
+
+.update-btn:hover {
+    background-color: #115837;
+}
+
+#upcom-div:hover .delete-btn,
+#upcom-div:hover .update-btn,
+#today-div:hover .delete-btn,
+#today-div:hover .update-btn {
+    opacity: 1; /* Visible on hover */
+}

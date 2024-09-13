@@ -1,0 +1,76 @@
+.about-container {
+  height: 100vh;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+.card {
+  background-color: #fff; 
+  border: 1px solid #008080; 
+  box-shadow: 
+    0 4px 6px #008080,
+    0 8px 5px rgba(0, 128, 128, 0.3),
+    0 12px 12px rgba(0, 128, 128, 0.3),
+    0 13px 13px rgba(0, 128, 128, 0.3),
+    0 10px 10px rgba(0, 128, 128, 0.3);
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.member-card {
+  height: auto;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.ourTeam {
+  margin-top: 40px;
+  font-size: 24px;
+  color: black; 
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.panel {
+  margin: 10px;
+  width: 300px; 
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #008080; 
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+a {
+  color: #008080; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    width: 100%;
+  }
+}
